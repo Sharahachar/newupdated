@@ -1,0 +1,168 @@
+body {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-size: 100%;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.navBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navBar-logoContainer {
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+
+.navBar-logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.employee-navbar__home-button {
+  background: none; /* Remove any background */
+  padding: 0; /* Remove any padding */
+  border: none; /* Remove any border */
+  cursor: pointer; /* Make it clickable */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.employee-navbar__home-button-image {
+  width: 50px; /* Adjust the size of your home button image */
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.employee-navbar__home-button:hover .employee-navbar__home-button-image {
+  background-color: #45a049; /* Darker green on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.employee-navbar__home-button:active .employee-navbar__home-button-image {
+  background-color: #3e8e41; /* Even darker green on click */
+  transform: scale(0.98); /* Slightly shrink on click */
+}
+
+
+.navBar-nav {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.navBar-dropdownToggle {
+  position: relative;
+  cursor: pointer;
+ 
+  z-index: 1000; /* Ensures dropdown is on top of most other elements */
+}
+
+.navBar-profileImage {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  margin-left: 60px;
+}
+
+.navBar-dropdownHeader {
+  display: flex;
+  align-items: center;
+  
+}
+
+.navBar-dropdownTitle {
+  color: #ddd;
+  font-size: 25px;
+}
+
+.navBar-dropdownIcon {
+  color: white;
+  font-size: 50px;
+  margin-left: 10px;
+}
+
+/* Dropdown menu styles */
+.navBar-dropdownMenu-employee, .navBar-dropdownMenu-recruitment {
+ 
+  top: 100%;
+  right: 0;
+  
+  border-radius: 5px;
+ 
+  background-color: rgb(7, 10, 92);
+   /* Ensures dropdown is on top of other elements */
+}
+
+.navBar-menuItem {
+  font-size: 18px;
+  z-index: 1001;
+  position: absolute;
+  margin-top: 20px;
+  background-color: transparent;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  color: rgb(233, 225, 225);
+  padding: 10px 20px;
+  border: none;
+  width: 100%;
+  text-align: left;
+  text-decoration: none;
+}
+
+.navBar-profileDropdownMenu {
+  position: absolute;
+  top: 100px;
+  right: 0;
+  font-size: 25px;
+  border-radius: 5px;
+  z-index: 1000;
+  background-color: rgb(7, 10, 92);
+  padding: 10px;
+}
+
+.navBar-profileMenuItem {
+  padding: 25px;
+  margin-left: 0px;
+  margin-right: 10px;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  background-color: transparent;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  gap: 30px;
+}
+
+.navBar-profileIcon {
+  font-size: 30px;
+  margin-right: 10px;
+}
+
+.navBar-profileMenuItem:hover {
+  color: rgb(35, 178, 245);
+  background-color: rgba(35, 178, 245, 0.1);
+}
+
+/* Fixing the gap between dropdowns */
+.navBar-dropdownToggle {
+  margin-right: 70px;
+}
